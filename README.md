@@ -19,7 +19,7 @@ Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles,
 <br><br> 
 
 <p align="center">
- <img  height="420rem" alt="GIF" src="https://github.com/Aquiles369/iconos/blob/main/demo_tool_gestor_paylodad.gif"/>
+ <img  height="420rem" alt="GIF" src="https://github.com/Aquiles369/iconos/blob/main/demo_tool_gestor_informes.gif"/>
 </p>
 
 <br>
