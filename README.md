@@ -23,7 +23,8 @@ Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles,
 </p>
 
 <br>
-
+<picture> <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width ="1050" > </picture>
+<br>
 
 ### <picture> <img src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3V4NGRlcHkzNGdqbWd2bjBzdHVlNDRoMmNwdmVxOW14OGlibjBzaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/EF0aNcNeR9R7CW3sFq/giphy.gif" width = 75px>  </picture> Problema que resuelve<br><br>
 **En bug bounty y auditorías web, los informes terminan desperdigados entre tickets, wikis, tabs del navegador y notas sueltas. Clasificar, priorizar (“leo ya o después”), anotar contexto y abrir en lote sin depender de un backend suele ser un dolor.<br><br>
