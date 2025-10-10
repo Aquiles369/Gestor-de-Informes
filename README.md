@@ -25,13 +25,13 @@ Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles,
 <br>
 
 
-### <picture> <img src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29jMnN4ZTVncjhjemxzbTBweTVsdGM3MWY3bmc4MGVsZ2plZ2t5eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YARSS5UwRLZtcQHXzp/giphy.gif" width = 75px>  </picture> Problema que resuelve<br><br>
+### <picture> <img src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3V4NGRlcHkzNGdqbWd2bjBzdHVlNDRoMmNwdmVxOW14OGlibjBzaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/EF0aNcNeR9R7CW3sFq/giphy.gif" width = 75px>  </picture> Problema que resuelve<br><br>
 **En bug bounty y auditorías web, los informes terminan desperdigados entre tickets, wikis, tabs del navegador y notas sueltas. Clasificar, priorizar (“leo ya o después”), anotar contexto y abrir en lote sin depender de un backend suele ser un dolor.<br><br>
 • Este gestor te quita ese caos con un entorno totalmente offline, simple y visual: creás categorías, cargás informes/URLs, los priorizás con etiquetas claras, sumás notas (con última edición), abrís un informe o un lote filtrado en un par de clics y te llevás todo como JSON cuando quieras.</a>.** 
 
 <br>
 
-### <picture> <img src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnExbjVwcW51dnE0bGs5MjZ6eW13Z3cxOW1nb2VrNWhnMjk4Y3J6dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3M01r0QQdz0CvLLbu1/giphy.gif" width = 75px>  </picture> Qué aporta y cómo beneficia <br><br>
+### <picture> <img src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGYwNzBkM2ZsOWl2bThodzg5bW5haTJpNGYwaTdvZ21zd3pvZ2x0NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YARSS5UwRLZtcQHXzp/giphy.gif" width = 75px>  </picture> Qué aporta y cómo beneficia <br><br>
 **• Orden quirúrgico de tus informes: categorías personalizadas (XSS, IDOR, RCE, etc.), renglones con título editable y URL, y etiquetas que te dicen qué leer primero.<br><br>
 • Búsqueda y filtro instantáneos: panel lateral que busca por título, URL, nota o categoría. Filtro por estado para enfocarte en lo urgente o lo de “montón”.<br><br>
 • Documentación táctica sin fricción: cada informe admite nota con contexto, fecha de última edición y tooltip flotante (previsualización segura).<br><br>
@@ -45,7 +45,7 @@ Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles,
 <picture> <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width ="1050" > </picture>
 <br>
 
-### <picture> <img src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTluamxsZ29hbTV2Zmw0OWNwN2cxMHI4azl1YTBvemYybW80eHRlZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hvSd2YvTdBlniSJ8tA/giphy.gif" width = 80px>  </picture> Resumen rápido
+### <picture> <img src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXF2ZmtjNHA1YnJ5bjR2dG8yMjhjbWw1aXJwazE0eW9qa2U4anVoNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Ha2DszQVpjI1AxvW5h/giphy.gif" width = 80px>  </picture> Resumen rápido
 <br><br>
 
 Tool offline en el navegador para gestionar informes/URLs de bug bounty.
@@ -60,7 +60,7 @@ Los contenidos en tooltips se escapan (no se ejecuta nada), porque queremos info
 <picture> <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width ="1050" > </picture>
 <br>
 
-### <picture> <img src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWVleDk0Y3lmdmN1eWU3eWowNGsyaGlpbHQwbTM0aDNia21qbjNpayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/S3caeWZviAaDtzmU7X/giphy.gif" width = 80px>  </picture> Características
+### <picture> <img src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3dzdmI1NzlzaWV2bmIyYXE5ejg2MWJmcDdyMGEzcW1neTI3bzNvZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9zGxwEDZUiv1NkQNY2/giphy.gif" width = 80px>  </picture> Características
 <br><br>
 
 - Categorías dinámicas
@@ -170,7 +170,7 @@ Cada renglón incluye:
 <picture> <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width ="1050" > </picture>
 <br>
 
-### <picture> <img src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExenRleDh2cXF1aG9mcjJnank0MzRoNHZoZDFiZ2Y2ZTE0eWdxeGhsbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/jtvED7ZmtCVyE3xzC2/giphy.gif" width = 80px>  </picture> Uso
+### <picture> <img src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWRlZWlnd2RtdnJlamdrNWxwYms0dHFoaHVtZmh0eDN5dGJxcjZpeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/XNHCerCpCseporu38r/giphy.gif" width = 80px>  </picture> Uso
 <br><br>
 
 
