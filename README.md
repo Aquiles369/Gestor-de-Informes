@@ -10,12 +10,12 @@
 
 <picture> <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">  </picture>
 
- ### <picture> <img src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2w3cm4zMzBnc2QxMDE2cXhseGdvYzZ5OTVrcjh1Ymkzd2s1OWtnaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Q7cYJsVRUjRgwq6yEc/giphy.gif" width = 75px>  </picture> Gestor de cargas útiles
+ ### <picture> <img src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXhxZHg2NWE3aDI2aWdvaWVsYnV1NGttMmpmMDR6c2xwMTYzY2IyayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/lHXsw5hwW0UAnSdHAH/giphy.gif" width = 75px>  </picture> Gestor de Informes
 
 <br>
 
- **Repositorio de Payloads — gestor offline con filtros y notas. Una tool offline para gestionar payloads de bug bounty.
-Permite crear categorías personalizadas (XSS, IDOR, RCE, etc.), agregar renglones con payloads, asignarles un estado (muy bueno, bueno, medio, débil), añadir notas con tooltip, copiar ítems o listas completas y buscar en todo el repositorio. Todo queda guardado en localStorage, con funciones para exportar/importar JSON y borrar todo,<a href="https://youtu.be/dN1YjkjBx0w" target="_blank" rel="noopener">demo de la tool Youtube</a>.** 
+ **Repositorio de informes/URLs — gestor local con filtros, notas y apertura rápida.
+Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles, tickets, wikis, PoCs, dashboards internos, etc.). Permitite crear categorías personalizadas (XSS, IDOR, RCE, …), agregar renglones con informes/URLs, etiquetarlos por prioridad/calidad, añadir notas con tooltip, abrir un informe o toda la lista filtrada y buscar en todo el repositorio.Todo queda en localStorage, con funciones para exportar/importar JSON y resetear,<a href="https://youtu.be/dN1YjkjBx0w" target="_blank" rel="noopener">demo de la tool Youtube</a>.** 
 <br><br> 
 
 <p align="center">
@@ -26,18 +26,18 @@ Permite crear categorías personalizadas (XSS, IDOR, RCE, etc.), agregar renglon
 
 
 ### <picture> <img src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ29jMnN4ZTVncjhjemxzbTBweTVsdGM3MWY3bmc4MGVsZ2plZ2t5eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/YARSS5UwRLZtcQHXzp/giphy.gif" width = 75px>  </picture> Problema que resuelve<br><br>
-**En bug bounty y auditorías web, mantener organizado un gran volumen de payloads es un dolor constante: se terminan dispersos en archivos sueltos, notas desordenadas, hojas de texto difíciles de buscar o directamente se pierden con el tiempo. Además, muchas veces necesitás clasificarlos por efectividad, añadir observaciones, copiarlos rápido o filtrarlos según el tipo de ataque… y ninguna herramienta lo hace fácil sin depender de servicios externos o bases de datos.<br><br>
-• Este gestor elimina ese caos ofreciendo un entorno totalmente offline, sencillo y visual, donde podés crear categorías personalizadas, organizar tus payloads, clasificarlos por nivel de efectividad, tomar notas, filtrarlos, buscarlos al instante y exportarlos o importarlos sin complicaciones.</a>.** 
+**En bug bounty y auditorías web, los informes terminan desperdigados entre tickets, wikis, tabs del navegador y notas sueltas. Clasificar, priorizar (“leo ya o después”), anotar contexto y abrir en lote sin depender de un backend suele ser un dolor.<br><br>
+• Este gestor te quita ese caos con un entorno totalmente offline, simple y visual: creás categorías, cargás informes/URLs, los priorizás con etiquetas claras, sumás notas (con última edición), abrís un informe o un lote filtrado en un par de clics y te llevás todo como JSON cuando quieras.</a>.** 
 
 <br>
 
 ### <picture> <img src = "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnExbjVwcW51dnE0bGs5MjZ6eW13Z3cxOW1nb2VrNWhnMjk4Y3J6dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/3M01r0QQdz0CvLLbu1/giphy.gif" width = 75px>  </picture> Qué aporta y cómo beneficia <br><br>
-**• Organización profesional de tu arsenal: permite crear, renombrar y eliminar categorías personalizadas (XSS, IDOR, RCE, etc.), agregando payloads dentro de cada una con estados de efectividad claros (muy bueno, bueno, medio, débil), lo que te da una estructura limpia y ordenada de tu contenido ofensivo.<br><br>
-• Búsqueda y filtrado instantáneo: el buscador global permite localizar payloads por nombre, contenido, nota o categoría en segundos, y los filtros por estado te ayudan a concentrarte en los más útiles según el contexto del ataque.<br><br>
-• Documentación táctica sin esfuerzo: cada payload admite notas con información contextual, fecha de última edición y vista previa, para que nunca pierdas el “por qué” o el “cómo” de cada técnica.<br><br>
-• Productividad y velocidad: podés copiar un payload individual o todos los de una categoría al instante, exportar tu arsenal completo como JSON o resetear todo con un clic. Esto acelera tu flujo de trabajo y te permite reutilizar tu base en cualquier entorno o laboratorio.<br><br>
-• Uso offline y sin dependencias: todo funciona desde tu navegador con localStorage, sin necesidad de backend ni instalación, ideal para entornos aislados, laboratorios locales o situaciones donde la privacidad es prioritaria.<br><br>
-• Más enfoque en la explotación: al tener todo tu arsenal organizado, clasificado y accesible desde un solo lugar, eliminás el tiempo perdido buscando en archivos sueltos y podés concentrarte en lo que importa: crear, probar y mejorar tus payloads en el menor tiempo posible.</a>.** 
+**• Orden quirúrgico de tus informes: categorías personalizadas (XSS, IDOR, RCE, etc.), renglones con título editable y URL, y etiquetas que te dicen qué leer primero.<br><br>
+• Búsqueda y filtro instantáneos: panel lateral que busca por título, URL, nota o categoría. Filtro por estado para enfocarte en lo urgente o lo de “montón”.<br><br>
+• Documentación táctica sin fricción: cada informe admite nota con contexto, fecha de última edición y tooltip flotante (previsualización segura).<br><br>
+• Velocidad de ejecución: botón Abrir por renglón y opción Abrir TODOS (filtrados) con límite seguro (hasta 15 por clic para no pelear con bloqueadores). Exportás/importás JSON o reseteás en un clic.<br><br>
+• Privacidad y resiliencia: funciona offline en tu navegador usando localStorage. Sin backend, sin instalación, ideal para labs aislados o entornos sensibles.<br><br>
+• Más foco, menos tabitis: todo vive en un lugar. Menos tiempo buscando, más tiempo explotando (legalmente, obvio).</a>.** 
 
 <br>
 
@@ -48,10 +48,13 @@ Permite crear categorías personalizadas (XSS, IDOR, RCE, etc.), agregar renglon
 ### <picture> <img src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTluamxsZ29hbTV2Zmw0OWNwN2cxMHI4azl1YTBvemYybW80eHRlZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/hvSd2YvTdBlniSJ8tA/giphy.gif" width = 80px>  </picture> Resumen rápido
 <br><br>
 
-Tool offline en el navegador para gestionar payloads de bug bounty. Sin instalar nada: abrís el HTML y ya podés crear, editar o eliminar categorías, agregar renglones con payloads, asignar estados (muy bueno/bueno/medio/débil), filtrar, anotar y copiar. Todo queda guardado en localStorage; también podés exportar/importar JSON o resetear,el contenido se escapa en tooltips, no se ejecuta nada mantiene siempre el escape al mostrar notas y payloads.<br>
+Tool offline en el navegador para gestionar informes/URLs de bug bounty.
+Abrís el HTML y ya podés crear/editar/eliminar categorías, agregar renglones con informes, asignar etiquetas, filtrar, anotar, abrir individual o abrir todos los filtrados.<br><br>
+Persistencia en localStorage; también exportar/importar JSON o reset total.
+Los contenidos en tooltips se escapan (no se ejecuta nada), porque queremos informes, no un XSS auto-inflicto.<br>
 
 
-• Formato: interfaz web local (HTML/JS), toda la data se guarda en localStorage por defecto (offline, en tu máquina).<br><br>
+• Formato: interfaz web local (HTML/JS). Data en localStorage (offline, en tu máquina).<br><br>
 
 
 <picture> <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width ="1050" > </picture>
@@ -64,90 +67,105 @@ Tool offline en el navegador para gestionar payloads de bug bounty. Sin instalar
 
 • Crear, renombrar y eliminar categorías.
 
-• Cada categoría muestra la cantidad de payloads que contiene.
-
-• Cada categoría trae su filtro propio: todos, sin etiqueta, muy bueno, bueno, medio, débil. <br><br><br>
+• Cada categoría muestra el conteo de informes.
 
 
-- Gestión de payloads (renglones)
-- Cada renglón tiene<br>
+- Filtro propio por categoría:
 
-• Título editable (Nuevo payload por defecto).
+Todos, Sin etiqueta y estados personalizados:
 
-• Campo de texto para payload.
+• Leer inmediatamente
 
-• Botón Copiar al portapapeles.
+• Leer ahora
 
-• Píldora de estado (muy bueno / bueno / medio / débil / sin etiqueta).
+• Leer luego
 
-• Notas: modal para editar y guardar; tooltip flotante con preview y fecha de última edición; indicador rojo si existe nota.
+• Buen informe
 
-• Botón Borrar para eliminar el payload.<br><br><br>
+• Informe regular
+
+• Informe del montón<br>
+
+
+- Gestión de informes (renglones)
+
+Cada renglón incluye:
+
+• Título editable (por defecto: Nuevo informe).
+
+• Click en el nombre para renombrar (sin abrir el modal de nota).
+
+• Campo URL (placeholder “URL del informe (https://…)”).
+
+• Si falta protocolo, se normaliza a http:// al abrir.
+
+• Botón Abrir (nueva pestaña, noopener,noreferrer).
+
+• Píldora de estado con menú y atajo para ciclar.
+
+• Notas: modal para editar/guardar, tooltip con preview y fecha de última edición, e indicador visual si hay nota.
+
+• Borrar renglón.<br>
 
 
 - Funciones por categoría
 
 • Agregar renglón.
 
-• Copiar TODOS los payloads de la categoría (respeta el filtro activo).
+• Abrir TODOS (filtrados): abre hasta 15 por clic (para evitar bloqueos de pop-ups); si hay más, te avisa cuántas quedaron.
 
-• Podes crear automaticamente los relgones con lista de paylodad compleas uno debajo de otro.
+• Carga masiva: pegás una URL por línea y crea renglones automáticamente (opción de usar el inicio de la URL como título).
 
-
-• Eliminar categoría completa.<br><br><br>
-
-
+• Eliminar categoría completa.<br>
 
 
 - Buscador global
 
 • Panel lateral fijo.
 
-• Filtra por título, payload, nota o categoría.
+• Filtra por título, URL, nota o categoría.
 
-• Resalta y lleva al payload con scroll suave.<br><br><br>
-
-
+• Al hacer click en un resultado, hace scroll suave y resalta el renglón.<br>
 
 
-- Botonera de control (fija en pantalla)
+- Botonera de control (fija)
 
-• + Agregar categoría.
+• Agregar categoría
 
-• Exportar JSON (copiar base al portapapeles).
+• Exportar JSON (copia la base al portapapeles)
 
-• Importar JSON (pegar desde clipboard).
+• Importar JSON (pegar y restaurar)
 
-• Borrar todo (reset total).<br><br><br>
-
-
+• Borrar todo (reset total)<br>
 
 
-- Persistencia local
+-Persistencia local
 
-• Todo se guarda automáticamente en localStorage.
+• Guardado automático en localStorage.
 
-• Funciona 100% offline, sin servidor ni backend.<br><br><br>
-
-
-
-- Interfaz visual
-
-• Fondo oscuro con gradientes.
-
-• Tarjetas y secciones con glassmorphism (bordes, sombras, blur).<br><br><br>
+• 100% offline, sin servidor ni backend.<br>
 
 
+- Interfaz
 
-- Estados representados por colores claros:
+• Tema oscuro con gradientes y glassmorphism.
 
-• Verde = Muy bueno
+• Píldoras de estado con colores claros:
 
-• Azul = Bueno
+• Rojo = Leer inmediatamente
 
-• Naranja = Medio
+• Naranja = Leer ahora
 
-• Gris = Débil
+• Gris = Leer luego
+
+• Verde = Buen informe
+
+• Azul = Informe regular
+
+• Gris claro = Informe del montón
+
+• Seguridad UI: tooltips/nota se escapan siempre (<, >, etc.); nada se evalúa ni ejecuta. El botón Abrir usa nueva pestaña con noopener,noreferrer.
+
 
 <picture> <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width ="1050" > </picture>
 <br>
@@ -158,15 +176,15 @@ Tool offline en el navegador para gestionar payloads de bug bounty. Sin instalar
 
 1. Abrí el archivo .html en tu navegador.
 
-2. Clic en + Agregar categoría y empezá a crear/renombrar/eliminar.
+2. + Agregar categoría y empezá a crear/renombrar/eliminar.
 
-3. Dentro de cada categoría: Agregar renglón → escribir payload → asignar estado.
+3. Dentro de cada categoría: Agregar renglón → pegar URL → asignar estado.
 
-4. Usá el filtro por estado o el buscador global para encontrar todo al toque.
+4. Usá el filtro por estado o el buscador global para encontrar rápido.
 
-5. Opcional: Notas (tooltip + última edición), Copiar ítem o Copiar TODOS de la categoría.
+5. Opcional: Notas (tooltip + última edición), Abrir individual, o Abrir TODOS (filtrados).
 
-6. Cualquiera puede usarla: es simple, rápida y todo queda local.
+6. Exportar/Importar JSON cuando quieras migrar tu base; Borrar todo para un wipe nuclear.
 
 
  <br>
@@ -174,7 +192,7 @@ Tool offline en el navegador para gestionar payloads de bug bounty. Sin instalar
 <picture> <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width ="1050" > </picture>
 <br>
 
-### <picture> <img src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3YwbG9zbmU1amprdTJsbmxzYnpobzd5eGtnazB6b2FmdnllaTRhZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/h8UlsEpqiCISTKUzvz/giphy.gif" width = 80px>  </picture> "Gestor de Payloads — organiza, filtra y copia. Tu arsenal de bug bounty, offline y al instante."
+### <picture> <img src = "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3YwbG9zbmU1amprdTJsbmxzYnpobzd5eGtnazB6b2FmdnllaTRhZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/h8UlsEpqiCISTKUzvz/giphy.gif" width = 80px>  </picture> “Gestor de Informes — organiza, filtra y abre. Tu base de bug bounty, offline y al instante.”
 <br>
 
 
