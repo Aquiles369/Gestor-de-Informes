@@ -67,7 +67,7 @@ Los contenidos en tooltips se escapan (no se ejecuta nada), porque queremos info
 
 • Crear, renombrar y eliminar categorías.
 
-• Cada categoría muestra el conteo de informes.
+• Cada categoría muestra el conteo de informes.<br><br>
 
 
 - Filtro propio por categoría:
@@ -84,7 +84,7 @@ Todos, Sin etiqueta y estados personalizados:
 
 • Informe regular
 
-• Informe del montón<br>
+• Informe del montón<br><br>
 
 
 - Gestión de informes (renglones)
@@ -105,7 +105,7 @@ Cada renglón incluye:
 
 • Notas: modal para editar/guardar, tooltip con preview y fecha de última edición, e indicador visual si hay nota.
 
-• Borrar renglón.<br>
+• Borrar renglón.<br><br>
 
 
 - Funciones por categoría
@@ -116,7 +116,7 @@ Cada renglón incluye:
 
 • Carga masiva: pegás una URL por línea y crea renglones automáticamente (opción de usar el inicio de la URL como título).
 
-• Eliminar categoría completa.<br>
+• Eliminar categoría completa.<br><br>
 
 
 - Buscador global
@@ -125,7 +125,7 @@ Cada renglón incluye:
 
 • Filtra por título, URL, nota o categoría.
 
-• Al hacer click en un resultado, hace scroll suave y resalta el renglón.<br>
+• Al hacer click en un resultado, hace scroll suave y resalta el renglón.<br><br>
 
 
 - Botonera de control (fija)
@@ -136,14 +136,14 @@ Cada renglón incluye:
 
 • Importar JSON (pegar y restaurar)
 
-• Borrar todo (reset total)<br>
+• Borrar todo (reset total)<br><br>
 
 
 -Persistencia local
 
 • Guardado automático en localStorage.
 
-• 100% offline, sin servidor ni backend.<br>
+• 100% offline, sin servidor ni backend.<br><br>
 
 
 - Interfaz
