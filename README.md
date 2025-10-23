@@ -140,7 +140,7 @@ Cada renglón incluye:
 • Borrar todo (reset total)<br><br><br>
 
 
--Persistencia local
+- Persistencia local
 
 • Guardado automático en localStorage.
 
@@ -177,7 +177,7 @@ Cada renglón incluye:
 
 1. Abrí el archivo .html en tu navegador.
 
-2. + Agregar categoría y empezá a crear/renombrar/eliminar.
+2. Agregar categoría y empezá a crear/renombrar/eliminar.
 
 3. Dentro de cada categoría: Agregar renglón → pegar URL → asignar estado.
 
