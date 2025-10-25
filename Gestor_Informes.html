@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <title>Gestor de Informes</title>
 <style>
 :root{
@@ -12,7 +15,7 @@
   --muted:#888;
   --accent:#d81a0cc4;
   --pill:#000000;
-  --border:#630d0db2;
+  --border:#8f2626b0;
 }
 body{
   background:var(--bg);
@@ -44,7 +47,32 @@ section.category{
   margin-bottom:20px;
   padding:10px 14px;
 }
-.chead{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.chead {
+  display: flex;
+  flex-wrap: wrap;            /* permite segunda fila si no entra */
+  align-items: center;
+  gap: 10px;
+}
+
+/* agrupa filtros y acciones dentro de la misma “línea lógica” */
+.cfilters, .cactions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+/* que los filtros no se expandan de más */
+.cfilters {
+  flex-shrink: 0;
+}
+
+/* que las acciones se mantengan pegadas a la derecha */
+.cactions {
+  flex-grow: 1;
+  justify-content: flex-start;  /* todos alineados en serie */
+}
+
 .ctitle{margin:0;font-size:20px;cursor:pointer}
 .cfilters{display:flex;gap:6px;align-items:center}
 .cfilter-select,.cfilter-input{
@@ -72,7 +100,7 @@ section.category{
 .linkbox{flex-grow:1;display:flex;gap:6px}
 .ipayload{
   flex-grow:1;
-  background:#000000;
+  background:#941b1ba2;
   color:var(--fg);
   border:1px solid var(--border);
   border-radius:6px;
@@ -88,13 +116,13 @@ section.category{
   cursor:pointer;
 }
 .pill-none{background:#333}
-.pill-monton{background:#69417c;color:#000000}
+.pill-monton{background:#4b434e;color:#000000}
 .pill-regular{background:#bdc00da9;color:#000000}
 .pill-buen{background:#02c0f0;color:#000000}
 .pill-muybueno{background:rgb(16, 151, 50);color:#000000}
 .pill-excelente{background:rgba(255, 0, 0, 0.692);color:#000}
 .pill-urgente{background:rgba(190, 178, 13, 0.829);color:#000000}
-.pill-luego{background:#a30bc2a8;color:#000}
+.pill-luego{background:#79278aa8;color:#000}
 .modal{
   position:fixed;inset:0;background:rgba(0,0,0,.6);
   display:none;align-items:center;justify-content:center;
@@ -111,7 +139,7 @@ section.category{
 .note-wrap textarea{
   width:100%;
   min-height:160px;
-  background:#000000;
+  background:#7a1f1f75;
   color:var(--fg);
   border:1px solid var(--border);
   border-radius:6px;
@@ -149,11 +177,175 @@ section.category{
 #tooltip .tt-title{font-weight:700;margin-bottom:3px}
 #tooltip .tt-meta{margin-top:3px;color:#701111;font-size:11px}
 .actions{display:flex;gap:6px;margin-top:10px}
+
+
+/* Hace que el encabezado de cada categoría quede fijo cuando se hace scroll */
+section.category {
+  position: relative;
+}
+
+section.category .chead {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 14px;
+}
+
+
+/* Sombra sutil cuando el header se queda pegado */
+section.category .chead::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
+  pointer-events: none;
+}
+
+
+
+
+/* ======= LIMPIEZA TOTAL DE BOTONES ======= */
+button,
+.btn,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+/* Hover simple, sin efectos extra */
+button:hover,
+.btn:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: #a11;
+}
+
+/* Botones secundarios, sin bordes ni sombras */
+button.secondary,
+.btn-secondary {
+  background: rgba(255,255,255,0.05);
+  color: #ddddddad;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+button.secondary:hover,
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+/* Asegura que nada se vea con borde al hacer foco */
+button:focus,
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
+/* Quita el fondo rojo a los botones de cabecera */
+.cactions .btn {
+  background: rgba(255, 255, 255, 0.05);  /* fondo oscuro neutro */
+  color: #ddd;
+  border: none;
+}
+
+.cactions .btn:hover {
+  background: rgba(255, 255, 255, 0.12);  /* hover sutil */
+  color: #fff;
+}
+
+
+
+/* ==== AJUSTE DE CAPAS DEL MODAL ==== */
+
+/* Fondo oscuro del modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998 !important; /* capa del fondo */
+}
+
+/* Contenedor visible (cuadro negro con texto) */
+.modal.open {
+  display: flex;
+}
+
+/* Caja interna (el bloque que muestra el contenido) */
+.modal .box {
+  position: relative;
+  background: var(--box);
+  color: var(--fg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  z-index: 9999 !important; /* capa superior: por encima del fondo */
+  box-shadow: 0 0 25px rgba(0,0,0,0.8);
+}
+
+/* Previene que el resto del contenido se superponga */
+body.modal-open {
+  overflow: hidden;
+}
+
+
+
+/* ==== EFECTO HOVER ROJO EN BOTONES PRINCIPALES ==== */
+
+/* Aplica a todos los botones del header/categorías */
+.cactions button,
+.cactions .btn {
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Hover rojo brillante */
+.cactions button:hover,
+.cactions .btn:hover {
+  background: #b00 !important;
+  color: #fff !important;
+}
+
+/* Opcional: si querés un leve cambio de cursor */
+.cactions button:hover,
+.cactions .btn:hover {
+  cursor: pointer;
+}
+
+/* Asegura que no haya bordes extra al pasar el mouse */
+.cactions button,
+.cactions .btn {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+
 </style>
 </head>
 <body>
 <center> <h1>🦅 Gestor de Informes 🦅</h1> </center>
-<button id="addCat" class="btn">+ Nueva categoría</button>
+<br><br>
 <div id="cats"></div>
 
 <!-- Modal de notas -->
@@ -293,14 +485,19 @@ section.category{
       fwrap.append(fState,fText);
 
       const actions=document.createElement('div');actions.className='cactions';
-      const addItemBtn=btn('+ Agregar',()=>addItem(cat.id));
-      const bulkBtn=btn('Carga masiva',()=>openBulk(cat.id));
-      const copyUrlsBtn=btn('Copiar URLs',()=>copyUrls(cat.id),true);
-      const copyNotesBtn=btn('Copiar Notas',()=>copyNotes(cat.id),true);
-      const exportBtn=btn('Exportar JSON',()=>exportCat(cat.id),true);
-      const importBtn=btn('Importar JSON',()=>importCat(cat.id),true);
-      const delCatBtn=btn('Eliminar categoría',()=>delCat(cat.id),true);
-      actions.append(addItemBtn,bulkBtn,copyUrlsBtn,copyNotesBtn,exportBtn,importBtn,delCatBtn);
+      // Botones de acciones dentro de cada categoría
+const addCatBtn = btn('+ Nueva categoría', addCategory); // ← agregado aquí
+const delCatBtn = btn('Eliminar categoría', () => delCat(cat.id), true);
+const addItemBtn = btn('+ Agregar', () => addItem(cat.id));
+const bulkBtn = btn('Carga masiva', () => openBulk(cat.id));
+const copyUrlsBtn = btn('Copiar URLs', () => copyUrls(cat.id), true);
+const copyNotesBtn = btn('Copiar Notas', () => copyNotes(cat.id), true);
+const exportBtn = btn('Exportar JSON', () => exportCat(cat.id), true);
+const importBtn = btn('Importar JSON', () => importCat(cat.id), true);
+
+// Orden: Nueva categoría primero, luego Agregar, etc.
+actions.append(addCatBtn, delCatBtn, addItemBtn, bulkBtn, copyUrlsBtn, copyNotesBtn, exportBtn, importBtn, );
+
       head.append(title,fwrap,actions);wrap.appendChild(head);
 
       const list=document.createElement('div');list.className='items';
@@ -387,7 +584,6 @@ section.category{
     cat.items.push({id:uid(),title:'Nuevo informe',payload:'',note:'',editedTs:0,status:null});save();render();}
   function delItem(catId,itemId){const cat=state.cats.find(c=>c.id===catId);if(!cat)return;
     cat.items=cat.items.filter(i=>i.id!==itemId);save();render();}
-  document.getElementById('addCat').onclick=addCategory;
 
   // notas
   const $modal=document.getElementById('modal');
