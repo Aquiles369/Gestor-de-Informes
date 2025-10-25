@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aquiles — Gestor de Informes</title>
+<title>Gestor de Informes</title>
 <style>
 :root{
-  --bg:#0d0d0d;
-  --box:#1a1a1a;
+  --bg:#000000;
+  --box:#000000;
   --fg:#f5f5f5;
   --muted:#888;
-  --accent:#00d2ff;
-  --pill:#222;
-  --border:#333;
+  --accent:#d81a0cc4;
+  --pill:#000000;
+  --border:#630d0db2;
 }
 body{
   background:var(--bg);
@@ -57,7 +57,7 @@ section.category{
 .cactions{display:flex;gap:6px;flex-wrap:wrap}
 .items{margin-top:10px;display:flex;flex-direction:column;gap:6px}
 .item{
-  background:#111;
+  background:#000000;
   border:1px solid var(--border);
   padding:6px 10px;
   border-radius:8px;
@@ -72,7 +72,7 @@ section.category{
 .linkbox{flex-grow:1;display:flex;gap:6px}
 .ipayload{
   flex-grow:1;
-  background:#000;
+  background:#000000;
   color:var(--fg);
   border:1px solid var(--border);
   border-radius:6px;
@@ -88,13 +88,13 @@ section.category{
   cursor:pointer;
 }
 .pill-none{background:#333}
-.pill-monton{background:#222;color:#ccc}
-.pill-regular{background:#444;color:#ddd}
-.pill-buen{background:#555;color:#fff}
-.pill-muybueno{background:#06f;color:#fff}
-.pill-excelente{background:#0f0;color:#000}
-.pill-urgente{background:#f00;color:#fff}
-.pill-luego{background:#999;color:#000}
+.pill-monton{background:#69417c;color:#000000}
+.pill-regular{background:#bdc00da9;color:#000000}
+.pill-buen{background:#02c0f0;color:#000000}
+.pill-muybueno{background:rgb(16, 151, 50);color:#000000}
+.pill-excelente{background:rgba(255, 0, 0, 0.692);color:#000}
+.pill-urgente{background:rgba(190, 178, 13, 0.829);color:#000000}
+.pill-luego{background:#a30bc2a8;color:#000}
 .modal{
   position:fixed;inset:0;background:rgba(0,0,0,.6);
   display:none;align-items:center;justify-content:center;
@@ -111,7 +111,7 @@ section.category{
 .note-wrap textarea{
   width:100%;
   min-height:160px;
-  background:#000;
+  background:#000000;
   color:var(--fg);
   border:1px solid var(--border);
   border-radius:6px;
@@ -135,7 +135,7 @@ section.category{
 .label-menu li:hover{background:#222}
 #tooltip{
   position:fixed;
-  background:#222;
+  background:#000000;
   color:#fff;
   padding:6px 8px;
   border-radius:6px;
@@ -147,22 +147,22 @@ section.category{
 }
 #tooltip.show{display:block}
 #tooltip .tt-title{font-weight:700;margin-bottom:3px}
-#tooltip .tt-meta{margin-top:3px;color:#bbb;font-size:11px}
+#tooltip .tt-meta{margin-top:3px;color:#701111;font-size:11px}
 .actions{display:flex;gap:6px;margin-top:10px}
 </style>
 </head>
 <body>
-<h1>Gestor de Informes Aquiles</h1>
+<center> <h1>🦅 Gestor de Informes 🦅</h1> </center>
 <button id="addCat" class="btn">+ Nueva categoría</button>
 <div id="cats"></div>
 
 <!-- Modal de notas -->
 <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="mod-title">
   <div class="box">
-    <center><h2 id="mod-title">Nota</h2></center>
-    <center><p id="mod-msg">Detalles, variantes, bypasses, referencias…</p></center>
+    <center><h2 id="mod-title">🦅</h2></center>
+    <center><p id="mod-msg">Tus notas personales en solo lugar</p></center>
     <div class="note-wrap">
-      <label id="noteLabel" for="noteArea">Nota</label>
+      <label id="noteLabel" for="noteArea">🦅</label>
       <textarea id="noteArea" placeholder="Tips, cadenas, CSP, contextos, mutaciones…"></textarea>
       <p id="metaInfo" style="font-size:12px;color:var(--muted);margin:6px 0 0"></p>
     </div>
@@ -401,8 +401,8 @@ section.category{
   function openNote(catId,itemId){
     const {item}=getCI(catId,itemId);if(!item)return;
     active={catId,itemId};
-    document.getElementById('mod-title').textContent='Nota — '+(item.title||'Informe');
-    document.getElementById('noteLabel').textContent='Nota — '+(item.title||'Informe');
+    document.getElementById('mod-title').textContent='  '+(item.title||'Informe');
+    document.getElementById('noteLabel').textContent='🦅 '+(item.title||'Informe');
     $noteArea.value=item.note||'';
     $metaInfo.textContent=item.editedTs?('Última edición: '+new Date(item.editedTs).toLocaleString()):'—';
     $modal.classList.add('open');hideTip();setTimeout(()=>{$noteArea.focus();},0);
