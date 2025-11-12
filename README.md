@@ -15,7 +15,7 @@
 <br>
 
  **Repositorio de informes/URLs — gestor local con filtros, notas y apertura rápida.
-Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles, tickets, wikis, PoCs, dashboards internos, etc.). Permitite crear categorías personalizadas (XSS, IDOR, RCE, …), agregar renglones con informes/URLs, etiquetarlos por prioridad/calidad, añadir notas con tooltip, abrir un informe o toda la lista filtrada y buscar en todo el repositorio.Todo queda en localStorage, con funciones para exportar/importar JSON y resetear, <a href="https://youtu.be/9bS0wc-d6i4" target="_blank" rel="noopener">demo de la tool Youtube version antigua la nueva version solo esta explicada en seccion de caracteristicas</a>.** 
+Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles, tickets, wikis, PoCs, dashboards internos, etc.). Permitite crear categorías personalizadas (XSS, IDOR, RCE, …), agregar renglones con informes/URLs, etiquetarlos por prioridad/calidad, añadir notas con tooltip, abrir un informe o toda la lista filtrada y buscar en todo el repositorio.Todo queda en localStorage, con funciones para exportar/importar JSON y resetear, <a href="https://youtu.be/9bS0wc-d6i4" target="_blank" rel="noopener">demo de la tool Youtube</a> version antigua la nueva version solo esta explicada en la sección de características.** 
 <br><br> 
 
 <p align="center">
