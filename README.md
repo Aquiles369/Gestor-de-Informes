@@ -15,7 +15,7 @@
 <br>
 
  **Repositorio de informes/URLs — gestor local con filtros, notas y apertura rápida.
-Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles, tickets, wikis, PoCs, dashboards internos, etc.). Permitite crear categorías personalizadas (XSS, IDOR, RCE, …), agregar renglones con informes/URLs, etiquetarlos por prioridad/calidad, añadir notas con tooltip, abrir un informe o toda la lista filtrada y buscar en todo el repositorio.Todo queda en localStorage, con funciones para exportar/importar JSON y resetear,<a href="https://youtu.be/9bS0wc-d6i4" target="_blank" rel="noopener">demo de la tool Youtube</a>.** 
+Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles, tickets, wikis, PoCs, dashboards internos, etc.). Permitite crear categorías personalizadas (XSS, IDOR, RCE, …), agregar renglones con informes/URLs, etiquetarlos por prioridad/calidad, añadir notas con tooltip, abrir un informe o toda la lista filtrada y buscar en todo el repositorio.Todo queda en localStorage, con funciones para exportar/importar JSON y resetear, <a href="https://youtu.be/9bS0wc-d6i4" target="_blank" rel="noopener">demo de la tool Youtube</a>.** 
 <br><br> 
 
 <p align="center">
@@ -166,6 +166,71 @@ Cada renglón incluye:
 • Gris claro = Informe del montón
 
 • Seguridad UI: tooltips/nota se escapan siempre (<, >, etc.); nada se evalúa ni ejecuta. El botón Abrir usa nueva pestaña con noopener,noreferrer.
+
+<br><br>
+
+
+- Mejoras implementadas
+
+  - Buscador global por categoría  
+  • Permite buscar cualquier categoría existente por nombre.  
+  • Al presionar Enter, te lleva automáticamente a esa categoría dentro de la página.  
+  • Despliega y expande la lista de informes de esa categoría.  
+
+- Filtro de plataformas (lectura de informes externos)  
+  • Incluye 8 plataformas diferentes para leer informes de bug bounty (Medium, BugReader, GitHub, Reddit, Pentester.land, Launchpad, Hacktivity y Freedium).  
+  • Opción “Abrir” para buscar en la plataforma seleccionada.  
+  • Opción “Abrir todas” para ejecutar la búsqueda en todas las plataformas al mismo tiempo.  
+  • Integrado con dorks: al escribir, por ejemplo, “xss bug bounty”, se inicia automáticamente la búsqueda con ese término en todas las plataformas elegidas.  
+
+- Filtro avanzado de estados  
+  • Permite filtrar informes por estado (Excelente, Regular, Leer ahora, Leer luego, etc.).  
+  • Muestra cuántos informes cumple cada estado dentro de la categoría actual.  
+
+- Filtro de búsqueda interna  
+  • Busca por título del informe, por URL o por texto en las notas.  
+  • Actualiza los resultados en tiempo real y resalta los que coinciden.  
+
+- Gestión de categorías e informes  
+  • Cada categoría tiene sus propios renglones con todas las funciones (editar, abrir, notas, audio, imagen, video, borrar, etc.).  
+  • Antes de eliminar un informe o una categoría, pide confirmación de seguridad.  
+  • Las categorías pueden crearse, renombrarse y eliminarse libremente.  
+
+- Carga masiva de informes  
+  • Permite pegar múltiples URLs (una por línea) para crear informes en bloque dentro de una categoría.  
+  • Se puede usar el inicio de cada URL como título automático.  
+
+- Copia selectiva  
+  • Copiar todas las URLs de una categoría con un clic.  
+  • Copiar todas las notas de una categoría.  
+  • Exportar solo las categorías seleccionadas mediante checkbox.  
+
+- Importar y exportar  
+  • Exportar toda la base en formato JSON.  
+  • Importar una base JSON previamente curada (con categorías, informes, notas, audio, imágenes y videos).  
+  • Permite intercambio entre hunters o equipos sin perder estructura.  
+
+- Reordenamiento  
+  • Permite reordenar las categorías arrastrando.  
+  • Permite reordenar los informes dentro de cada categoría.  
+
+- Multimedia  
+  • Cada informe puede contener notas, capturas de pantalla, grabaciones de audio o video.  
+  • Todo queda almacenado localmente (sin servidor) y visible desde la nota.  
+
+- Persistencia y seguridad  
+  • Guardado automático en localStorage.  
+  • 100% offline y portable.  
+  • Todos los datos quedan almacenados localmente en el navegador.  
+  • Sanitización total de notas (escapa < y >).  
+  • Los enlaces siempre abren en pestañas nuevas con noopener y noreferrer.  
+
+- Interfaz y flujo  
+  • Tema oscuro con glassmorphism y resaltados rojos en hover.  
+  • Mantiene el foco en la lectura (no interrumpe el flujo).  
+  • Cada categoría se expande automáticamente al hacer scroll y se mantiene visible.  
+  • Todo el diseño es funcional, limpio y enfocado al flujo de trabajo de un hunter.  
+
 
 
 <picture> <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width ="1050" > </picture>
