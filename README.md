@@ -19,7 +19,7 @@ Una tool 100% offline para gestionar enlaces de informes de bug bounty (paneles,
 <br><br> 
 
 <p align="center">
- <img  height="420rem" alt="GIF" src="https://github.com/Aquiles369/iconos/blob/main/tool_informe_gestor_git.gif"/>
+ <img  height="420rem" alt="GIF" src="https://github.com/Aquiles369/iconos/blob/main/defi_2.gif"/>
 </p>
 
 <br>
@@ -172,7 +172,7 @@ Cada renglón incluye:
 
 - Mejoras implementadas
 
-  - Buscador global por categoría  
+  • Buscador global por categoría  
   • Permite buscar cualquier categoría existente por nombre.  
   • Al presionar Enter, te lleva automáticamente a esa categoría dentro de la página.  
   • Despliega y expande la lista de informes de esa categoría.  
